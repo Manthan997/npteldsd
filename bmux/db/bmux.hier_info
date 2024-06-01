@@ -1,0 +1,14 @@
+|DUT
+input_vector[0] => bmux:add_instance.S
+input_vector[1] => bmux:add_instance.A
+input_vector[2] => bmux:add_instance.B
+output_vector[0] <= bmux:add_instance.Y
+
+
+|DUT|bmux:add_instance
+A => Y.DATAB
+B => Y.DATAA
+S => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

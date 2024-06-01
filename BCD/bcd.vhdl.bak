@@ -1,0 +1,35 @@
+library ieee;
+  use ieee.std_logic_1164.all;	-- standard unresolved logic UX01ZWLH-
+  use ieee.numeric_std.all;       -- for the signed, unsigned types and arithmetic ops
+  
+entity bcd is
+	port(
+		A,B 	: in std_logic_vector(3 downto 0);
+		Y		: out std_logic_vector(4 downto 0)
+	);
+end entity bcd;
+
+--arch
+architecture arch of bcd is
+
+--signal
+signal temp : unsigned(3 downto 0);
+signal output : unsigned(4 downto 0);
+signal six : unsigned(3 downto 0) := "0110";
+
+begin
+	process(A,B)
+	begin
+		temp <= (unsigned(A)+unsigned(B));
+		--now tem has 4 bit binary in unsigned form?
+		
+		if (temp > unsigned(3 downto 0) := "1001") then
+			output <= temp + six;
+			
+		else
+			output <= temp;
+		end if;
+	
+		Y <= std_logic_vector(output);
+	end process;
+end arch;

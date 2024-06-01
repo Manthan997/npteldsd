@@ -1,0 +1,33 @@
+library ieee;
+  use ieee.std_logic_1164.all;	-- standard unresolved logic UX01ZWLH-
+  use ieee.numeric_std.all;
+  
+--tens compliments generator
+
+package tenscomp is
+	component tenscomp is
+		post(
+			A : in std_logic_vector(3 downto 0);
+			Y : out std_logic_vector(3 downto 0);
+		);
+	end component tenscomp;
+end package tenscopm;  
+
+
+--entity
+
+entity tenscomp is
+	post(
+		A : in std_logic_vector(3 downto 0);
+		Y : out std_logic_vector(3 downto 0);
+	);
+end entity tenscomp;
+
+
+--architecture
+
+architecture arch of tenscomp is
+
+begin
+
+end arch;

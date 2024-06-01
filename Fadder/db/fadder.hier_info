@@ -1,0 +1,57 @@
+|DUT
+input_vector[0] => fadder:add_instance.PC
+input_vector[1] => fadder:add_instance.B
+input_vector[2] => fadder:add_instance.A
+output_vector[0] << fadder:add_instance.C
+output_vector[1] << fadder:add_instance.S
+
+
+|DUT|fadder:add_instance
+A => XOR_2:inst1.A
+A => AND_2:inst3.A
+A => OR_2:inst4.A
+B => XOR_2:inst1.B
+B => AND_2:inst3.B
+B => OR_2:inst4.B
+PC => XOR_2:inst2.B
+PC => AND_2:inst5.B
+S <= XOR_2:inst2.Y
+C <= OR_2:inst6.Y
+
+
+|DUT|fadder:add_instance|XOR_2:inst1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fadder:add_instance|XOR_2:inst2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fadder:add_instance|AND_2:inst3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fadder:add_instance|OR_2:inst4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fadder:add_instance|AND_2:inst5
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|fadder:add_instance|OR_2:inst6
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

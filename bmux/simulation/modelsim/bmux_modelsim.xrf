@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Anuya/manthan/npteldsdlol/bmux/TRACEFILE.txt
+source_file = 1, C:/Users/Anuya/manthan/npteldsdlol/bmux/Testbench.vhdl
+source_file = 1, C:/Users/Anuya/manthan/npteldsdlol/bmux/Gates.vhdl
+source_file = 1, C:/Users/Anuya/manthan/npteldsdlol/bmux/DUT.vhdl
+source_file = 1, C:/Users/Anuya/manthan/npteldsdlol/bmux/bmux.vhdl
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Anuya/manthan/npteldsdlol/bmux/db/bmux.cbx.xml
+design_name = DUT
+instance = comp, input_vector_a1_a_aI, input_vector[1], DUT, 1
+instance = comp, input_vector_a2_a_aI, input_vector[2], DUT, 1
+instance = comp, input_vector_a0_a_aI, input_vector[0], DUT, 1
+instance = comp, add_instance_aY_a0, add_instance|Y~0, DUT, 1
+instance = comp, output_vector_a0_a_aI, output_vector[0], DUT, 1

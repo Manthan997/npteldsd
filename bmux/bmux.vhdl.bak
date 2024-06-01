@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+--entity 
+entity bmux is 
+	ports(
+		A,B,S : in std_logic;
+		Y : out std_logic
+	);
+end entity bmux;
+
+--architecture

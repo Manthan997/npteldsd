@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.dmux.all;
+
+-- now as you're importing a pre-synthesised rtl map, 
+-- you have to use structural architecture here
+
+entity dmux_3 is
+	port(
+		A: in std_logic;
+		s: in std_logic_vector(2 downto 0);
+		Y: out std_logic
+	);
+end entity dmux_3;
+
+
+--architecture
+architecture arch of dmux_3 is
+--components
+ component dmux_1 is
+	port(
+		A, S	: in std_logic;
+		Y1, Y2: out std_logic
+	);	
+	end component dmux_1;
+	
+	
+begin
+
+end arch;
